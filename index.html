@@ -2,38 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/thumbs.css">
     <title>Basic HTML Website</title>
 </head>
 <body>
     <main>
-        <header>
+        <header id="head">
             <div class="logo">
                 <img src="images/logo.png" alt="Games logo">
             </div>
             <nav>
                 <a href="">Account</a>
-                <a href="">Favorites</a>
+                <a href="#favourites">Favorites</a>
                 <a href="">Basket</a>
             </nav>
         </header>
 
-        <section class="products">
+        <!-- Products Section -->
+        <section id="products">
+            <!-- Product #1 -->
             <article class="product">
-                <h4>The Witcher 3 Game of the Year Edition</h4>
-                <img src="images/the_witcher_3_goye.jpg" alt="">
+                <h4>Leagues of legends</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_1.jpg" alt="Leagues of legends">
                 <details>
                     <summary>Product Details</summary>
                     <p>
-                        <b>Platform:</b> Playstation <br>
+                        <b>Platform:</b> PC <br>
                         <b>Gametype:</b> RPG <br>
                         <b>PEGI rating: </b> 18+ <br
                     </p>
                 </details>
             </article>
-            <!--  -->
+            <!-- END Product #1 -->
+            <!-- Product #2 -->
+            <article class="product">
+                <h4>Hearthstone</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_2.png" alt="Hearthstone">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #2 -->
+            <!-- Product #3 -->
+            <article class="product">
+                <h4>DOTA 2</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_3.jpg" alt="DOTA 2">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #3 -->
+            <!-- Product #4 -->
+            <article class="product">
+                <h4>Overwatch</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_4.jpg" alt="Overwatch">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #4 -->
+            <!-- Product #5 -->
+            <article class="product">
+                <h4>FIFA</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_5.jpg" alt="FIFA">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #5 -->
+            <!-- Product #6 -->
+            <article class="product">
+                <h4>Fortnite</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_6.jpg" alt="Fortnite">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #6 -->
+            <!-- Product #7 -->
+            <article class="product">
+                <h4>GTA V</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_7.jpg" alt="GTA V">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #7 -->
+            <!-- Product #8 -->
+            <article class="product">
+                <h4>Counter Strike</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_8.jpg" alt="Counter Strike">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #8 -->
+            <!-- Product #9 -->
+            <article class="product">
+                <h4>Call of Duty</h4>
+                <img class="thumb" src="./images/thumb/thumbnail_9.jpg" alt="Call of Duty">
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        <b>Platform:</b> PC <br>
+                        <b>Gametype:</b> RPG <br>
+                        <b>PEGI rating: </b> 18+ <br
+                    </p>
+                </details>
+            </article>
+            <!-- END Product #9 -->
+        </section>
+        <!-- END Products Section -->
+
+        <!-- Favourites Section -->
+        <section id="favourites">
+            <h3>FAVOURITES</h3>
+            <!-- Favourite #1 -->
             <article class="product">
                 <h4>The Witcher 3 Game of the Year Edition</h4>
-                <img src="images/the_witcher_3_goye.jpg" alt="">
+                <img class="thumb" src="./images/the_witcher_3_goye.jpg" alt="The Witcher 3">
                 <details>
                     <summary>Product Details</summary>
                     <p>
@@ -46,9 +168,16 @@
             </article>
             <!--  -->
         </section>
+        <!-- END Favourites Section -->
 
         <footer>
-            Footer content and links
+            <p>
+                <a href="#head">GO UP</a>
+            </p>
+            <p>
+                Footer content and links
+            </p>
+
         </footer>
     </main>
 </body>
