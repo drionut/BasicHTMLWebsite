@@ -9,6 +9,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
+  /* preventing image to spill out of the .product container when animating */
+  overflow: hidden;
 }
 
 #products .product:nth-child(-n + 9) p,
@@ -19,6 +21,7 @@ h4 {
 }
 #products .product:nth-child(-n + 9) summary {
   padding-left: 10px;
+  margin-top: 15px;
 }
 
 .thumb {
@@ -29,4 +32,23 @@ h4 {
 /* Add hover effect on each .product */
 #products .product:nth-child(-n + 9):hover {
   background-color: rgba(35, 47, 62, 1);
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+#products .product:nth-child(-n + 9):hover > .thumb {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
 }
