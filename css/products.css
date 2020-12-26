@@ -5,7 +5,7 @@
   height: 325px;
   color: white;
   background-color: rgba(35, 47, 62, 0.9);
-  border: 1px solid gray;
+  /* border: 1px solid rgba(242, 98, 70, 1); */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
@@ -41,14 +41,11 @@ h4 {
   50% {
     transform: scale(1.1, 1.1);
   }
-  100% {
-    transform: scale(1, 1);
-  }
 }
 
 #products .product:nth-child(-n + 9):hover > .thumb {
   animation-name: zoom;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: initial;
   animation-timing-function: ease-in-out;
 }
