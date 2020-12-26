@@ -20,7 +20,7 @@
   list-style: none;
 }
 .menu li {
-  background-color: rgba(35, 47, 62, 0.9);
+  background-color: rgba(35, 47, 62, 1);
   color: #b3b3b3;
   display: inline-block;
   position: relative;
@@ -29,7 +29,8 @@
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
-.menu li:hover {
+.menu li:hover,
+.sub-menu li:hover {
   background-color: rgba(35, 47, 62, 1);
   color: rgba(242, 98, 70, 1);
 }
@@ -48,12 +49,8 @@
   visibility: hidden;
 }
 .sub-menu li {
-  background-color: #387593;
-  display: block;
+  background-color: rgba(35, 47, 62, 1);
   color: #b3b3b3;
+  display: block;
   padding: 12px 0px;
-}
-.sub-menu li:hover {
-  color: #fff;
-  background-color: #5eafdf;
 }
