@@ -1,0 +1,38 @@
+/* Contact form styling section */
+#contact form {
+  width: 600px;
+  margin: auto;
+}
+#contact input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.button {
+  width: 100%;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 10px;
+  cursor: pointer;
+}
+
+/* Footer styling section */
+footer {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(35, 47, 62, 0.9);
+  color: white;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}

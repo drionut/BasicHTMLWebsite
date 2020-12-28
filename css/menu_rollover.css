@@ -33,6 +33,7 @@
   background-color: rgba(35, 47, 62, 1);
   color: rgba(242, 98, 70, 1);
 }
+
 .menu li:hover ul {
   display: block;
   opacity: 1;

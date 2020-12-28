@@ -1,14 +1,17 @@
 body {
   background-color: #ffe1d9;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-h4 {
+h3 {
   color: rgba(242, 98, 70, 1);
   text-shadow: 1px 0.5px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 #products,
 #streams,
@@ -18,15 +21,15 @@ h4 {
   width: 90%;
   margin: auto;
   height: auto;
-  margin-bottom: 5px;
-  /* background-color: white; */
-  /* border: 1px solid gray; */
+  margin-bottom: 25px;
 }
-.logo {
+#logo {
   position: absolute;
   top: -30px;
   float: left;
 }
-#streams {
+#streams,
+#contact {
   clear: both;
+  padding-top: 10px;
 }
