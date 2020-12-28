@@ -22,7 +22,11 @@ h4 {
   /* background-color: white; */
   /* border: 1px solid gray; */
 }
-
+.logo {
+  position: absolute;
+  top: -30px;
+  float: left;
+}
 #streams {
   clear: both;
 }

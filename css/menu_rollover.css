@@ -1,14 +1,12 @@
 .wrap {
-  top: 0;
-  left: 0;
+  top: 10px;
   height: auto;
   width: 100%;
-  margin-left: 5px;
+  position: absolute;
 }
 .menu-container {
   top: 0;
   left: 0;
-  position: relative;
   width: 90%;
 }
 .menu {
@@ -18,16 +16,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  float: right;
 }
 .menu li {
-  background-color: rgba(35, 47, 62, 1);
+  background-color: rgba(35, 47, 62, 0.9);
   color: #b3b3b3;
   display: inline-block;
   position: relative;
   padding: 12px 40px;
   border-radius: 5px;
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 .menu li:hover,
 .sub-menu li:hover {
