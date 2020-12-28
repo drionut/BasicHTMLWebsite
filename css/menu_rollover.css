@@ -1,0 +1,56 @@
+.wrap {
+  top: 10px;
+  height: auto;
+  width: 100%;
+  position: absolute;
+}
+.menu-container {
+  top: 0;
+  left: 0;
+  width: 90%;
+}
+.menu {
+  font: bold 12px sans-serif;
+  text-align: center;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+.menu li {
+  background-color: rgba(35, 47, 62, 0.9);
+  color: #b3b3b3;
+  display: inline-block;
+  position: relative;
+  padding: 12px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.menu li:hover,
+.sub-menu li:hover {
+  background-color: rgba(35, 47, 62, 1);
+  color: rgba(242, 98, 70, 1);
+}
+
+.menu li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.sub-menu {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  top: 37px;
+  width: 127.5px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sub-menu li {
+  background-color: rgba(35, 47, 62, 1);
+  color: #b3b3b3;
+  display: block;
+  padding: 12px 0px;
+}

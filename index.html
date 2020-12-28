@@ -2,21 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/products.css" />
     <link rel="stylesheet" href="./css/general_style.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/menu_rollover.css" />
+    <link rel="stylesheet" href="./css/thumb_style.css" />
+    <link rel="stylesheet" href="./css/contact_footer.css" />
     <title>Basic HTML Website</title>
   </head>
   <body>
     <main>
       <header id="head">
-        <div class="logo">
+        <div id="logo">
           <img src="images/logo.png" alt="Games logo" />
         </div>
-        <nav>
-          <a href="">Account</a>
-          <a href="#favourites">Favorites</a>
-          <a href="#streams">Streams</a>
-          <a href="#contact">Contact Us</a>
+        <nav class="wrap">
+          <div class="menu-container">
+            <ul class="menu">
+              <a href="#logo"><li>Account</li></a>
+              <a href="#favourites"><li>Favorites</li></a>
+              <li>
+                Streams
+                <ul class="sub-menu">
+                  <a href="#stream_1"><li>Stream 1</li></a>
+                  <a href="#stream_2"><li>Stream 2</li></a>
+                </ul>
+              </li>
+              <a href="#contact">
+                <li>Contact Us</li>
+              </a>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -25,11 +40,12 @@
         <!-- Product #1 -->
         <article class="product">
           <h4>Leagues of legends</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/thumbnail_1.jpg"
-            alt="Leagues of legends"
-          />
+          <div class="thumb">
+            <img
+              src="./images/thumb/thumbnail_1.jpg"
+              alt="Leagues of legends"
+            />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -43,11 +59,9 @@
         <!-- Product #2 -->
         <article class="product">
           <h4>Hearthstone</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/thumbnail_2.png"
-            alt="Hearthstone"
-          />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_2.png" alt="Hearthstone" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -61,11 +75,9 @@
         <!-- Product #3 -->
         <article class="product">
           <h4>DOTA 2</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/dota_thumbnail_3.jpg"
-            alt="DOTA 2"
-          />
+          <div class="thumb">
+            <img src="./images/thumb/dota_thumbnail_3.jpg" alt="DOTA 2" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -79,11 +91,12 @@
         <!-- Product #4 -->
         <article class="product">
           <h4>Overwatch</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/overwatch_thumbnail_4.jpg"
-            alt="Overwatch"
-          />
+          <div class="thumb">
+            <img
+              src="./images/thumb/overwatch_thumbnail_4.jpg"
+              alt="Overwatch"
+            />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -97,7 +110,9 @@
         <!-- Product #5 -->
         <article class="product">
           <h4>FIFA</h4>
-          <img class="thumb" src="./images/thumb/thumbnail_5.jpg" alt="FIFA" />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_5.jpg" alt="FIFA" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -111,11 +126,9 @@
         <!-- Product #6 -->
         <article class="product">
           <h4>Fortnite</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/thumbnail_6.jpg"
-            alt="Fortnite"
-          />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_6.jpg" alt="Fortnite" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -129,7 +142,9 @@
         <!-- Product #7 -->
         <article class="product">
           <h4>GTA V</h4>
-          <img class="thumb" src="./images/thumb/thumbnail_7.jpg" alt="GTA V" />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_7.jpg" alt="GTA V" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -143,11 +158,9 @@
         <!-- Product #8 -->
         <article class="product">
           <h4>Counter Strike</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/thumbnail_8.jpg"
-            alt="Counter Strike"
-          />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_8.jpg" alt="Counter Strike" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -161,11 +174,9 @@
         <!-- Product #9 -->
         <article class="product">
           <h4>Call of Duty</h4>
-          <img
-            class="thumb"
-            src="./images/thumb/thumbnail_9.jpg"
-            alt="Call of Duty"
-          />
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_9.jpg" alt="Call of Duty" />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -181,9 +192,10 @@
 
       <!-- Streams Section -->
       <section id="streams">
-        <h3>STREAMS</h3>
+        <h3>Streams</h3>
+        <hr />
         <!-- stream #1 -->
-        <article class="stream">
+        <article id="stream_1">
           <iframe
             width="560"
             height="315"
@@ -196,7 +208,7 @@
         <!-- END stream #1 -->
 
         <!-- stream #2 -->
-        <article class="stream">
+        <article id="stream_2">
           <iframe
             width="560"
             height="315"
@@ -212,15 +224,17 @@
 
       <!-- Favourites Section -->
       <section id="favourites">
-        <h3>FAVOURITES</h3>
+        <h3>Favourites</h3>
+        <hr />
         <!-- Favourite #1 -->
-        <article class="product">
-          <h4>The Witcher 3 Game of the Year Edition</h4>
-          <img
-            class="thumb"
-            src="./images/the_witcher_3_goye.jpg"
-            alt="The Witcher 3"
-          />
+        <article class="favourite">
+          <h4>The Witcher 3 Game of the Year</h4>
+          <div class="thumb">
+            <img
+              src="./images/thumb/thumbnail_witcher.jpg"
+              alt="The Witcher 3"
+            />
+          </div>
           <details>
             <summary>Product Details</summary>
             <p>
@@ -233,26 +247,58 @@
           </details>
         </article>
         <!--  -->
+        <article class="favourite">
+          <h4>Fortnite</h4>
+          <div class="thumb">
+            <img src="./images/thumb/thumbnail_6.jpg" alt="Fortnite" />
+          </div>
+          <details>
+            <summary>Product Details</summary>
+            <p>
+              <b>Platform:</b> PC <br />
+              <b>Gametype:</b> RPG <br />
+              <b>PEGI rating: </b> 18+ <br />
+            </p>
+          </details>
+        </article>
       </section>
       <!-- END Favourites Section -->
 
       <!-- Contact Us Section -->
       <section id="contact">
-        <h4>Contact US</h4>
-        <form action="" method="get">
-          First name: <input type="text" name="first_name" value="" /><br />
-          Last name: <input type="text" name="last_name" value="" /><br />
-          Email: <input type="email" name="email" /><br />
-          <textarea name="message" rows="8" cols="50"></textarea>
-          <br />
-          <input type="submit" value="Send your message" />
+        <h3>Contact US</h3>
+        <hr />
+        <form action="" method="post">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            value=""
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+            value=""
+            required
+          />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <textarea
+            name="message"
+            rows="8"
+            cols="50"
+            placeholder="...type your message..."
+          ></textarea>
+
+          <input class="button" type="submit" value="Send your message..." />
         </form>
       </section>
       <!-- END Contact section -->
 
       <footer>
         <p>
-          <a href="#head">GO UP</a>
+          <a href="#logo">GO UP</a>
         </p>
         <p>Footer content and links</p>
       </footer>
